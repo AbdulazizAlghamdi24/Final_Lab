@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-
+import './App.css'
 function AddBookmark({ onAddBookmark }) {
   const [title, setTitle] = useState('');
   const [url, setUrl] = useState('');
@@ -21,7 +21,7 @@ function AddBookmark({ onAddBookmark }) {
   };
 
   return (
-    <form onSubmit={handleSubmit}>
+    <form onSubmit={handleSubmit} className="add-bookmark-form">
       <input
         type="text"
         placeholder="Title"
